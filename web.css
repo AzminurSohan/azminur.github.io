@@ -1,0 +1,83 @@
+/* === reset & base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* header / nav */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+}
+nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav .nav-links {
+  list-style: none;
+}
+nav .nav-links li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+nav .nav-links li a {
+  color: white;
+  font-weight: bold;
+}
+
+/* sections */
+.section {
+  width: 90%;
+  max-width: 800px;
+  margin: 3rem auto;
+}
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero .name {
+  color: #2c3e50;
+}
+.section h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.project-item {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #eee;
+  margin-top: 4rem;
+}
