@@ -3,55 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
+  <title>Md Azminur Rahman</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- You can add font from Google Fonts if you like: -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">Your Name</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="brand">YourName</a>
+        <button class="toggle-button" id="nav-toggle">
+          ☰
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
     </nav>
   </header>
 
   <section id="home" class="section hero">
-    <h1>Hello, I'm <span class="name">Your Name</span></h1>
-    <p>Statistics graduate | Aspiring Data-Scientist / ML Enthusiast</p>
-  </section>
-
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a BSc Statistics graduate with skills in data analysis, machine learning, and research. 
-      I love working on projects that have real-world impact, especially in development of low-resource communities.
-    </p>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <!-- repeat this block for each project -->
-      <div class="project-item">
-        <h3>Project Title</h3>
-        <p>Brief description of what you did, what technologies used, what result / takeaway.</p>
-      </div>
-      <!-- end project block -->
+    <div class="container">
+      <h1>Hello, I'm <span class="name">Your Name</span></h1>
+      <p class="subtitle">Data-Science & Statistics Enthusiast | ML / Research Aspirant</p>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: your.email@example.com</p>
-    <!-- you can later enhance with a contact form if you like -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a BSc Statistics graduate from [Your University]. I have experience in data analysis, machine learning, and research. I enjoy building data-driven solutions to real-world problems, especially those affecting under-resourced communities.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <span class="skill">Python</span>
+        <span class="skill">Statistics</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">R / MATLAB</span>
+        <!-- Add more as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- project card -->
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>Short description of the project, technologies, results, link to repo or demo.</p>
+        </div>
+        <!-- repeat for more projects -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>LinkedIn / GitHub: add your links here</p>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 Your Name. Built with ❤️</p>
+    </div>
   </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
+
